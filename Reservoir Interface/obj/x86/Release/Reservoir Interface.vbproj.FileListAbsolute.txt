@@ -1,0 +1,26 @@
+C:\Users\Mr. President\Documents\Visual Studio 2010\Projects\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.vbprojResolveAssemblyReference.cache
+C:\Users\Mr. President\Desktop\a1\programing practice\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.vbprojResolveAssemblyReference.cache
+C:\Users\Mr. President\Downloads\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.vbprojResolveAssemblyReference.cache
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\bin\Release\Reservoir Interface.exe.manifest
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\bin\Release\Reservoir Interface.application
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\bin\Release\Reservoir Interface.exe
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\bin\Release\Reservoir Interface.pdb
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\bin\Release\Reservoir Interface.xml
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\bin\Release\AGauge.dll
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\bin\Release\AquaGauge.dll
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\bin\Release\itextsharp.dll
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.vbprojResolveAssemblyReference.cache
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir_Interface.AddPage.resources
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir_Interface.CollectionInterface.resources
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir_Interface.Login.resources
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir_Interface.Main_Menu.resources
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir_Interface.Resources.resources
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir_Interface.Processor.resources
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir_Interface.splash.resources
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.vbproj.GenerateResource.Cache
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.TrustInfo.xml
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.exe.manifest
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.application
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.exe
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.xml
+G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.pdb
