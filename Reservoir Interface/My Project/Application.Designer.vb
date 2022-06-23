@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Reservoir_Interface.CollectionInterface
+            Me.MainForm = Global.Reservoir_Interface.splash
         End Sub
     End Class
 End Namespace

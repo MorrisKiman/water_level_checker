@@ -8,7 +8,7 @@ Public Class AddPage
     'Bado deleting and editting modules
     Private Sub AddPage_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Konnect = New MySqlConnection
-        Konnect.ConnectionString = "server=localhost; userid=root; password=morris; convert zero datetime=true; database=maji"
+        Konnect.ConnectionString = "server=localhost; userid=root; password=WaterSprayer; convert zero datetime=true; database=maji"
         SaveRec.Enabled = False
         edit.Enabled = False
         Delete.Enabled = False
@@ -75,7 +75,7 @@ Public Class AddPage
         Dim dbDataset As New DataTable
         Dim SDA As New MySqlDataAdapter
         Dim bSource As New BindingSource
-        Konnect.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=morris; database=maji"
+        Konnect.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=WaterSprayer; database=maji"
         Try
             Konnect.Open()
             Dim Query As String
@@ -122,7 +122,7 @@ Public Class AddPage
                 Query = "update maji.employees set Surname='" & Sname.Text & "', Other_Names='" & OthNmes.Text & "', Telephone_Number='" & TellNo.Text & "', Residence ='" & Residence.Text & "', National_ID ='" & IDNo.Text & "', Access_Level ='" & AccessLevel.Text & "', Username_Name ='" & Uname.Text & "', Access_Code ='" & Insignia.Text & "' where employee_id = '" & empid.Text & "' "
                 Kommando = New MySqlCommand(Query, Konnect) 'Date_of_Birth='" & AppDOB.Text & "', 
                 Soma = Kommando.ExecuteReader
-                MessageBox.Show("The record has been edited.", "ACK St Pauls Mukuyu-ini", MessageBoxButtons.OK)
+                MessageBox.Show("The record has been edited.", "Maji", MessageBoxButtons.OK)
                 basicResetter()
                 SaveRec.Enabled = False
                 edit.Enabled = False

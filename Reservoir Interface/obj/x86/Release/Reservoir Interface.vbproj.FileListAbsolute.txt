@@ -24,3 +24,26 @@ G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Rese
 G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.exe
 G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.xml
 G:\$ inter OS\@jobz\Reservoir Interface\Reservoir Interface\obj\x86\Release\Reservoir Interface.pdb
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\bin\Release\Reservoir Interface.exe.config
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\bin\Release\Reservoir Interface.exe.manifest
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\bin\Release\Reservoir Interface.application
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\bin\Release\Reservoir Interface.exe
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\bin\Release\Reservoir Interface.pdb
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\bin\Release\Reservoir Interface.xml
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\bin\Release\AGauge.dll
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\bin\Release\AquaGauge.dll
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\bin\Release\itextsharp.dll
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir_Interface.AddPage.resources
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir_Interface.CollectionInterface.resources
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir_Interface.Login.resources
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir_Interface.Main_Menu.resources
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir_Interface.Resources.resources
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir_Interface.Processor.resources
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir_Interface.splash.resources
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.vbproj.GenerateResource.Cache
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.TrustInfo.xml
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.exe.manifest
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.application
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.exe
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.xml
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.pdb

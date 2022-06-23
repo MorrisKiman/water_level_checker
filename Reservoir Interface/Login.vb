@@ -10,12 +10,12 @@ Public Class Login
 
     Private Sub Login_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Konnect = New MySqlConnection
-        Konnect.ConnectionString = "server=localhost; userid=root; password=morris"
+        Konnect.ConnectionString = "server=localhost; userid=root; password=WaterSprayer"
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Konnect = New MySqlConnection
-        Konnect.ConnectionString = "server=localhost; userid=root; password=morris"
+        Konnect.ConnectionString = "server=localhost; userid=root; password=WaterSprayer"
         If UserName.Text = "" Or Password.Text = "" Then
             MsgBox("Please Enter a username and Password to proceed!", MsgBoxStyle.Critical)
         Else

@@ -29,7 +29,7 @@ Public Class CollectionInterface
 
     Private Sub CollectionInterface_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         MySQLKon = New MySqlConnection
-        MySQLKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=morris; database=sacco"
+        MySQLKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=WaterSprayer; database=sacco"
         Timer1.Enabled = False
         ComPort = ""
         For Each sp As String In My.Computer.Ports.SerialPortNames
@@ -140,7 +140,7 @@ Public Class CollectionInterface
         Dim dbDataset As New DataTable
         Dim SDA As New MySqlDataAdapter
         Dim bSource As New BindingSource
-        MySQLKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=morris; database=maji"
+        MySQLKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=WaterSprayer; database=maji"
         Try
             MySQLKon.Open()
             Dim Query As String
@@ -215,7 +215,7 @@ Public Class CollectionInterface
         'gets the most recently added water volume in the db which will be used to calculate the rate at which
         'water is being pumped.
         MySQLKon = New MySqlConnection
-        MySQLKon.ConnectionString = "server=localhost; userid=root; password=morris"
+        MySQLKon.ConnectionString = "server=localhost; userid=root; password=WaterSprayer"
         Dim READER As MySqlDataReader
         Dim Command As MySqlCommand
 
@@ -237,7 +237,7 @@ Public Class CollectionInterface
 
     Private Sub prevol()
         MySQLKon = New MySqlConnection
-        MySQLKon.ConnectionString = "server=localhost; userid=root; password=morris"
+        MySQLKon.ConnectionString = "server=localhost; userid=root; password=WaterSprayer"
         Dim READER As MySqlDataReader
         Dim Command As MySqlCommand
 

@@ -11,7 +11,7 @@ Public Class Processor
     End Sub
     Private Sub Processor_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         MySqlKon = New MySqlConnection
-        MySqlKon.ConnectionString = "server=localhost; userid=root; password=morris;"
+        MySqlKon.ConnectionString = "server=localhost; userid=root; password=WaterSprayer;"
         Update_Table()
     End Sub
     Private Sub summaryFiller()
@@ -32,7 +32,7 @@ Public Class Processor
     Private Sub litres_pd() 'calculates the volume of water that has been pumped out to consumers
         'I need the following things: last level that the tank was filled-the current level of water present 
         MySQLKon = New MySqlConnection
-        MySQLKon.ConnectionString = "server=localhost; userid=root; password=morris"
+        MySqlKon.ConnectionString = "server=localhost; userid=root; password=WaterSprayer"
         Dim READER As MySqlDataReader
         Dim Command As MySqlCommand
         Dim lastFill As Decimal
@@ -55,7 +55,7 @@ Public Class Processor
 
     Private Sub prevol()
         MySQLKon = New MySqlConnection
-        MySQLKon.ConnectionString = "server=localhost; userid=root; password=morris"
+        MySqlKon.ConnectionString = "server=localhost; userid=root; password=WaterSprayer"
         Dim READER As MySqlDataReader
         Dim Command As MySqlCommand
 
@@ -78,7 +78,7 @@ Public Class Processor
 
     Private Sub cntgetter()
         MySqlKon = New MySqlConnection
-        MySqlKon.ConnectionString = "server=localhost; userid=root; password=morris"
+        MySqlKon.ConnectionString = "server=localhost; userid=root; password=WaterSprayer"
         Dim READER As MySqlDataReader
         Dim Command As MySqlCommand
         Try
@@ -104,7 +104,7 @@ Public Class Processor
         Dim SDA As New MySqlDataAdapter
         Dim Query As String
         Dim bSource As New BindingSource
-        MySqlKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=morris; database=sacco"
+        MySqlKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=WaterSprayer; database=sacco"
         Try
             MySqlKon.Open()
             'Query = "Select *from maji.data_summary"
@@ -132,7 +132,7 @@ Public Class Processor
         Dim dbDataset As New DataTable
         Dim SDA As New MySqlDataAdapter
         Dim bSource As New BindingSource
-        MySQLKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=morris; database=sacco"
+        MySqlKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=WaterSprayer; database=sacco"
         Try
             MySQLKon.Open()
             Dim Query As String
