@@ -564,7 +564,7 @@ Partial Class CollectionInterface
         '
         Me.Timer_LBL.AutoSize = True
         Me.Timer_LBL.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Timer_LBL.Location = New System.Drawing.Point(583, 180)
+        Me.Timer_LBL.Location = New System.Drawing.Point(583, 177)
         Me.Timer_LBL.Name = "Timer_LBL"
         Me.Timer_LBL.Size = New System.Drawing.Size(34, 24)
         Me.Timer_LBL.TabIndex = 22

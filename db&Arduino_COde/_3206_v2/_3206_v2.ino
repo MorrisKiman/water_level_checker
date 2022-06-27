@@ -21,7 +21,7 @@ void setup () {
 
 //start the program
 void loop () {
-//sonar();
+sonar();
  if (Serial.available())//wait for user entry
  {
     ch = Serial.read();//read vb commands
@@ -31,7 +31,7 @@ void loop () {
             {digitalWrite(motor_in, HIGH);}
             break;
         case 'b':
-          while (distance >=0.9 )
+          //while (distance >=0.9 )
             {digitalWrite(motor_out, HIGH);}
             break;
         case 'c':
@@ -42,7 +42,7 @@ void loop () {
             break;
         case 'e':
             digitalWrite(motor_in, LOW);
-            digitalWrite(motor_in, LOW);
+            digitalWrite(motor_out, LOW);
             break; 
             } // end of switch case
      }//big if

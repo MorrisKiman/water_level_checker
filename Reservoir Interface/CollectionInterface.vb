@@ -98,7 +98,7 @@ Public Class CollectionInterface
         Try
             'r=1.4572m; height= 3m; vol= (baseArea x height)= {(3.18*3.14)*height}'
             'capacity in litres= vol*1000
-            Dim Artemis As Decimal = Decimal.Parse(WHeight.Text, Globalization.NumberStyles.Currency)
+            Dim Artemis As String = Decimal.Parse(WHeight.Text, Globalization.NumberStyles.Currency)
             Dim vM As Double
             Dim Aquaconverted = Artemis
             ReceivedData = ReceiveSerialData()
@@ -144,7 +144,7 @@ Public Class CollectionInterface
         Try
             MySQLKon.Open()
             Dim Query As String
-            Query = "Select *from maji.water_level"
+            Query = "Select * from maji.water_level order by Data_ID DESC"
             Kommando = New MySqlCommand(Query, MySQLKon)
             SDA.SelectCommand = Kommando
             SDA.Fill(dbDataset)
@@ -260,6 +260,9 @@ Public Class CollectionInterface
 
     End Sub
 
+    Private Sub WHeight_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles WHeight.Click
+
+    End Sub
 End Class
 
 'Summary_ID, Summary_Date, Liters_Pumped_Out, Pump_rate, Payments_Due

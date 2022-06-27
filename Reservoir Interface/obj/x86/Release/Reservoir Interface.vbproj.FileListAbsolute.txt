@@ -47,3 +47,8 @@ C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\
 C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.exe
 C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.xml
 C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.pdb
+D:\New folder\water_level_checker\Reservoir Interface\bin\Release\Reservoir Interface.exe.config
+D:\New folder\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.exe
+D:\New folder\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.xml
+D:\New folder\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.pdb
+C:\Users\Mr. President\source\repos\water_level_checker\Reservoir Interface\obj\x86\Release\Reservoir Interface.vbprojResolveAssemblyReference.cache
