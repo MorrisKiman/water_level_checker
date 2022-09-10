@@ -21,8 +21,9 @@
     End Sub
 
     Private Sub Reports_Click(sender As System.Object, e As System.EventArgs) Handles Report.Click
-        Me.Hide()
+        'Me.Hide()
         'Reports.Show()
+        MsgBox("THIS MODULE IS NOT READY!", MsgBoxStyle.Critical)
     End Sub
 
     Private Sub DataAnalysis_Click(sender As System.Object, e As System.EventArgs) Handles DataAnalysis.Click

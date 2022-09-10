@@ -1,66 +1,56 @@
-#include <Stepper.h>
-#include <Servo.h>
-//Define constants for the stepper
-const float Stp_per_revolution = 32;
-const float gear_Reduction = 64;
-const float stepsPerOutRev = Stp_per_revolution * gear_Reduction;
-int StepsNeeded;
-Stepper stepperMotor(Stp_per_revolution, 8, 9, 10, 11);
 //sonar module
 const unsigned int TRIG_PIN= 5 ;
 const unsigned int ECHO_PIN= 7 ;
 float duration, distance;
-//const unsigned int BAUD_;
 
-//servo
-Servo servo;
-int angle = 0;
-//vb commands channel
+//motors
+int motor_in = 12;//inflow pump
+int motor_out = 15;//outflow pump
+
+//value for changing pump status
 char ch;
 
+//get everything set up
 void setup () {
- pinMode ( TRIG_PIN , OUTPUT );
- pinMode ( ECHO_PIN , INPUT);
- servo.attach(3);
-servo.write(angle);
-Serial.begin(9600);
-Serial. begin(9600 );
-}
+  pinMode ( TRIG_PIN , OUTPUT );
+  pinMode ( ECHO_PIN , INPUT);
+  pinMode (motor_in, OUTPUT);
+  pinMode (motor_out, OUTPUT);
+  Serial.begin(9600);//baudrate
+  } //end of setup
 
- void loop() {
-  sonar();
+//start the program
+void loop () {
+sonar();
  if (Serial.available())//wait for user entry
  {
     ch = Serial.read();//read vb commands
       switch (ch)
       {
         case 'a':
-        while (ch = 'a' )
-            {servio();}
+            {digitalWrite(motor_in, HIGH);}
             break;
         case 'b':
-          while (distance >=0.9 )
-            {stepper();}
+          //while (distance >=0.9 )
+            {digitalWrite(motor_out, HIGH);}
             break;
         case 'c':
-          //digitalWrite(reset, HIGH);
+          digitalWrite(motor_in, LOW);
             break;
         case 'd':
-            digitalWrite(8, LOW);
-            digitalWrite(9,LOW);
-            digitalWrite(10, LOW);
-            digitalWrite(11, LOW);
+            digitalWrite(motor_out, LOW);
             break;
         case 'e':
-            digitalWrite(8, LOW);
-            digitalWrite(9,LOW);
-            digitalWrite(10, LOW);
-            digitalWrite(11, LOW);
-            off_servio();
-            break; }}}
- 
- void sonar()
- {
+            digitalWrite(motor_in, LOW);
+            digitalWrite(motor_out, LOW);
+            break; 
+            } // end of switch case
+     }//big if
+  
+  
+  }//end of loop
+
+void sonar(){
  digitalWrite (TRIG_PIN , LOW );
  delayMicroseconds(2);
  digitalWrite (TRIG_PIN , HIGH);
@@ -72,42 +62,13 @@ Serial. begin(9600 );
  distance= (30-(duration/29/2))/10 ;
  Serial. println(distance );
  delay (1000);
-    }
+    }// end of sonar function
 
-    void stepper()
-{
-  StepsNeeded = 4;
-   StepsNeeded = stepsPerOutRev;
-   stepperMotor.setSpeed(600);
-   stepperMotor.step(StepsNeeded);
-   sonar();
+
+
+
+
+
+
+
   
-  }
-
-  void servio()
-  {
-     // put your main code here, to run repeatedly:
-  for (angle = 0; angle < 180; angle++)
-
-  {
-    servo.write(angle);
-    sonar();
-    delayMicroseconds(1);
-    ch = Serial.read();
-    }
-  for (angle = 180 ; angle >0; angle--)
-
-  {
-    servo.write(angle);
-    sonar();
-    ch = Serial.read();
-    }}
-
-    //switch those motors off!!
-    void off_servio()
-    {
-      for (angle == angle; angle>0||angle<0; angle-- || angle+20)
-      {
-        servo.write(angle);
-        delayMicroseconds(1);}
-      }

@@ -19,34 +19,38 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `maji`
+-- Database: maji
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `employees`
+-- Table structure for table employees
 --
 
-DROP TABLE IF EXISTS `employees`;
-CREATE TABLE IF NOT EXISTS `employees` (
-  `Employee_ID` int(11) NOT NULL AUTO_INCREMENT,
-  `Surname` varchar(20) NOT NULL,
-  `Other_Names` varchar(100) NOT NULL,
-  `Telephone_Number` varchar(15) DEFAULT NULL,
-  `Residence` varchar(100) DEFAULT NULL,
-  `National_ID` varchar(20) DEFAULT NULL,
-  `Access_Level` varchar(20) DEFAULT NULL,
-  `Username` varchar(50) DEFAULT NULL,
-  `Access_Code` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`Employee_ID`)
+create database maji;
+
+use maji;
+
+DROP TABLE IF EXISTS employees;
+CREATE TABLE IF NOT EXISTS employees (
+  Employee_ID int(11) NOT NULL AUTO_INCREMENT,
+  Surname varchar(20) NOT NULL,
+  Other_Names varchar(100) NOT NULL,
+  Telephone_Number varchar(15) DEFAULT NULL,
+  Residence varchar(100) DEFAULT NULL,
+  National_ID varchar(20) DEFAULT NULL,
+  Access_Level varchar(20) DEFAULT NULL,
+  Username varchar(50) DEFAULT NULL,
+  Access_Code varchar(20) DEFAULT NULL,
+  PRIMARY KEY (Employee_ID)
 ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `employees`
+-- Dumping data for table employees
 --
 
-INSERT INTO `employees` (`Employee_ID`, `Surname`, `Other_Names`, `Telephone_Number`, `Residence`, `National_ID`, `Access_Level`, `Username`, `Access_Code`) VALUES
+INSERT INTO employees (Employee_ID, Surname, Other_Names, Telephone_Number, Residence, National_ID, Access_Level, Username, Access_Code) VALUES
 (1, 'Ruthrock', 'Cynthia Ayuma', '9866-383877', 'Thika', '99-08-75-63', 'Attendant', 'Admin', 'Admin'),
 (2, 'Weeword', 'Wansi Sinwa', '8765-45789', 'Thika', '98-65-45-67', 'System Monitor', 'Wee', 'nintendo'),
 (3, 'Njune', 'sdknc', '8888-888888', 'Thika', '00-00-00-00', 'Attendant', 'x', 'y'),
@@ -58,28 +62,28 @@ INSERT INTO `employees` (`Employee_ID`, `Surname`, `Other_Names`, `Telephone_Num
 -- --------------------------------------------------------
 
 --
--- Table structure for table `water_level`
+-- Table structure for table water_level
 --
 
-DROP TABLE IF EXISTS `water_level`;
-CREATE TABLE IF NOT EXISTS `water_level` (
-  `Data_ID` int(11) NOT NULL AUTO_INCREMENT,
-  `water_level` float DEFAULT NULL,
-  `Time_Checked` time DEFAULT NULL,
-  `Date_Checked` date DEFAULT NULL,
-  `Status` varchar(20) DEFAULT NULL,
-  `water_Volume` float DEFAULT NULL,
-  `Flow_rate_per_second` float DEFAULT NULL,
-  `Liters_Pumped_Out` float DEFAULT NULL,
-  `Payments_Due` float DEFAULT NULL,
-  PRIMARY KEY (`Data_ID`)
+DROP TABLE IF EXISTS water_level;
+CREATE TABLE IF NOT EXISTS water_level (
+  Data_ID int(11) NOT NULL AUTO_INCREMENT,
+  water_level float DEFAULT NULL,
+  Time_Checked time DEFAULT NULL,
+  Date_Checked date DEFAULT NULL,
+  Status varchar(20) DEFAULT NULL,
+  water_Volume float DEFAULT NULL,
+  Flow_rate_per_second float DEFAULT NULL,
+  Liters_Pumped_Out float DEFAULT NULL,
+  Payments_Due float DEFAULT NULL,
+  PRIMARY KEY (Data_ID)
 ) ENGINE=MyISAM AUTO_INCREMENT=48 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `water_level`
+-- Dumping data for table water_level
 --
 
-INSERT INTO `water_level` (`Data_ID`, `water_level`, `Time_Checked`, `Date_Checked`, `Status`, `water_Volume`, `Flow_rate_per_second`, `Liters_Pumped_Out`, `Payments_Due`) VALUES
+INSERT INTO water_level (Data_ID, water_level, Time_Checked, Date_Checked, Status, water_Volume, Flow_rate_per_second, Liters_Pumped_Out, Payments_Due) VALUES
 (1, 3, '11:44:39', '2020-09-14', 'Stagnant', 2000270, 0, 0, 0),
 (2, 3, '11:44:41', '2020-09-14', 'Stagnant', 20002.7, 33337.9, 0, 100014000),
 (3, -0.62, '11:44:47', '2020-09-14', 'Stagnant', 11868.3, 33004.4, 0, 1000140),

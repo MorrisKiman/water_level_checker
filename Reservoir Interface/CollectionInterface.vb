@@ -29,7 +29,7 @@ Public Class CollectionInterface
 
     Private Sub CollectionInterface_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         MySQLKon = New MySqlConnection
-        MySQLKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=morris; database=sacco"
+        MySQLKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=WaterSprayer; database=sacco"
         Timer1.Enabled = False
         ComPort = ""
         For Each sp As String In My.Computer.Ports.SerialPortNames
@@ -98,7 +98,7 @@ Public Class CollectionInterface
         Try
             'r=1.4572m; height= 3m; vol= (baseArea x height)= {(3.18*3.14)*height}'
             'capacity in litres= vol*1000
-            Dim Artemis As Decimal = Decimal.Parse(WHeight.Text, Globalization.NumberStyles.Currency)
+            Dim Artemis As String = Decimal.Parse(WHeight.Text, Globalization.NumberStyles.Currency)
             Dim vM As Double
             Dim Aquaconverted = Artemis
             ReceivedData = ReceiveSerialData()
@@ -140,11 +140,11 @@ Public Class CollectionInterface
         Dim dbDataset As New DataTable
         Dim SDA As New MySqlDataAdapter
         Dim bSource As New BindingSource
-        MySQLKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=morris; database=maji"
+        MySQLKon.ConnectionString = "server=localhost; convert zero datetime=true; userid=root; password=WaterSprayer; database=maji"
         Try
             MySQLKon.Open()
             Dim Query As String
-            Query = "Select *from maji.water_level"
+            Query = "Select * from maji.water_level order by Data_ID DESC"
             Kommando = New MySqlCommand(Query, MySQLKon)
             SDA.SelectCommand = Kommando
             SDA.Fill(dbDataset)
@@ -215,7 +215,7 @@ Public Class CollectionInterface
         'gets the most recently added water volume in the db which will be used to calculate the rate at which
         'water is being pumped.
         MySQLKon = New MySqlConnection
-        MySQLKon.ConnectionString = "server=localhost; userid=root; password=morris"
+        MySQLKon.ConnectionString = "server=localhost; userid=root; password=WaterSprayer"
         Dim READER As MySqlDataReader
         Dim Command As MySqlCommand
 
@@ -237,7 +237,7 @@ Public Class CollectionInterface
 
     Private Sub prevol()
         MySQLKon = New MySqlConnection
-        MySQLKon.ConnectionString = "server=localhost; userid=root; password=morris"
+        MySQLKon.ConnectionString = "server=localhost; userid=root; password=WaterSprayer"
         Dim READER As MySqlDataReader
         Dim Command As MySqlCommand
 
@@ -260,6 +260,9 @@ Public Class CollectionInterface
 
     End Sub
 
+    Private Sub WHeight_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles WHeight.Click
+
+    End Sub
 End Class
 
 'Summary_ID, Summary_Date, Liters_Pumped_Out, Pump_rate, Payments_Due
